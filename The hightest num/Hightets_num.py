@@ -1,12 +1,12 @@
 numbers = []
 reserv = str() #
 while True:
-    try:        #Проверяем на число
-        a = input()
+    try: 
+        a = input("Введи число или stop")
         reserv = a
         a = int(a)
         numbers.append(a)
-    except: #Есди вводили строку то проверка команды
+    except: 
         if reserv == 'Stop' or reserv == 'stop':
             break
         else:
@@ -14,7 +14,7 @@ while True:
 more_num = numbers[0]
 try:
     for i in numbers:
-        if i > more_num: #Отслеживаем проверяем на большее число
+        if i > more_num: 
             more_num = i
     print(more_num)
 except:
