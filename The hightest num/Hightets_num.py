@@ -1,8 +1,8 @@
+print("Введи Stop или число")
 numbers = []
 reserv = str() #
 while True:
     try: 
-        print("Введи Stop или число")
         a = input()
         reserv = a
         a = int(a)
