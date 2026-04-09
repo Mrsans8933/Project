@@ -2,7 +2,8 @@ numbers = []
 reserv = str() #
 while True:
     try: 
-        a = input("Введи число или stop")
+        print("Введи Stop или число")
+        a = input()
         reserv = a
         a = int(a)
         numbers.append(a)
@@ -16,6 +17,6 @@ try:
     for i in numbers:
         if i > more_num: 
             more_num = i
-    print(more_num)
+    print("Самое большое число:", more_num)
 except:
     print("Вы не ввели число")
