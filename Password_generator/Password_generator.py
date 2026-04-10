@@ -20,5 +20,5 @@ if choose == 3:
 
 
 
-
-print(*password)
+print("Ваш пароль:")
+print(*password, sep='')
